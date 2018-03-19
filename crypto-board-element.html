@@ -1,0 +1,35 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+
+<dom-module id="crypto-board-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `crypto-board-element`
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class CryptoBoardElement extends Polymer.Element {
+      static get is() { return 'crypto-board-element'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'crypto-board-element'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(CryptoBoardElement.is, CryptoBoardElement);
+  </script>
+</dom-module>
